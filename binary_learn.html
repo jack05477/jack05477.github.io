@@ -1,0 +1,80 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>數位邏輯設計-2(進制轉換)</title>
+	</head>
+	<script>
+		alert("學習完,務必點選<我已學習完本章>");
+		function correct(){
+			window.location.href='exercise.htm';
+		}
+		function correct_b(){
+			window.location.href='binary.htm';
+		}
+		function correct_h(){
+			window.location.href='hexadecimal.htm';
+		}
+	</script>
+	<body bgcolor="pink">
+	<center>
+		<p><font color=white>要談進制轉換前,先了解何謂進制?逢基底(10,2,16...)進位,
+		以10進制來說,21 = 2*10<sup>1</sup> + 1*10<sup>0</sup>,說得更清楚的說10進制就是1,2,3,4,5,6,7,8,9,10,11,12,...
+		而在電腦科學裡以</font><font color=red>2進制</font>與<font color=blue>16進制</font><font color=white>為主</font></p>
+		<p><font color=red>2進制</font><br>
+		<font color=white>何謂2進制?就是逢2進位,只有1與0,且每個數字都是一個位元(bit),也就是說3就是10,四是11,...以此類推<br>
+		舉例來說,1110<sub>(2)</sub> = 1*2<sup>3</sup>+1*2<sup>2</sup>+1*2<sup>1</sup>+0*2<sup>0</sup> = 14<sub>(10)</sub>
+		由上述例子所知,我們可以用不同的進位制來表示同一個數</font><br>
+		<a href="https://zh.wikipedia.org/wiki/%E4%BA%8C%E8%BF%9B%E5%88%B6">了解更多有關二進制</a>
+		<p><font color=blue>16進制</font><br>
+		何謂16進制?就是逢16進位.比較特別的是在16進制中
+		A = 10 , B = 11 , C = 12 , D = 13 , E = 14 , F = 15
+		所以16進制就是1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+		舉例來說,0xF4<sub>(16)</sub> = 15*16<sup>1</sup>+4*16<sup>0</sup> = 244<sub>(10)</sub>
+		在CS裡,我們通常用<font color=red>0xX</font>來表示16進制<br>
+		<a href="https://zh.wikipedia.org/wiki/%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6">了解更多有關十六進制</a></p>
+		<p><font color=blue>8進制</font><br>
+		何謂8進制?就是逢8進位.所以8進制就是1,2,3,4,5,6,7<br>
+		<a href="https://zh.wikipedia.org/wiki/%E5%85%AB%E8%BF%9B%E5%88%B6">了解更多有關八進制</a></p>
+		<p>
+		至於如何將10進制的數轉為2進制或16進制或8進制?我們分三種情況<br>
+		<font color=green>第一:只有整數<br></font>
+		Ex.252<br>
+		Solution.<br>
+		<font color=orange>這種情況,我們用<font color=red>除法</font>將其轉為2進制或16進制或8進位,</font><br>
+		<img src="7010.jpg" width="600" height="350">
+		<img src="7011.jpg" width="600" height="350"><br>
+		<font color=green>第二:只有小數</font><br>
+		Ex.0.375<br>
+		Solution.<br>
+		<font color=orange>這種情況,我們用<font color=red>乘法</font>將其轉為2進制或16進制或8進位,</font><br>
+		<img src="7013.jpg" width="600" height="350"><br>
+		<font color=green>第三:正數,小數皆有<br></font>
+		Ex.12.375<br>
+		Solution.<br>
+		<font color=orange>這種情況,我們通常<font color=red>將其分開處理</font>來轉為2進制或16進制或8進位,</font><br>
+		<img src="7016.jpg" width="600" height="350"><br>
+		ps.雖然未列出8進位,但求法相同<br>
+		詳細講解請看下面影片:
+		<!- ....... -!>
+		</p><br>
+		<p>
+		至於如何將非10進制的數轉為10進制?我們利用<font color=orange>乘法將其基數乘上系數</font>,舉一個例子:<br>
+		ex.101110<sub>(2)</sub> = N<sub>(10)</sub>,求N?<br>
+		Solution.<br>
+		N = 1*2<sup>5</sup> + 1*2<sup>4</sup>+1*2<sup>3</sup> + 1*2<sup>2</sup>+1*2<sup>1</sup> + 1*2<sup>0</sup> = 46<br>
+		101110<sub>(2)</sub> = 46<sub>(10)</sub> , N = 46
+		</p>
+		<p>
+		至於如何在二、八、十六進制之中轉換?我們利用<font color=orange>兩招方式</font>,講解如下<br>
+		Step1.8進制三個bits一組;16進制四個bits一組<br>
+		Step2.不足位"補零"<br>
+		詳細講解請看影片:
+		</p>
+		<button id="target" onclick="correct_b()">挑戰自我-2</button>
+		<button id="target" onclick="correct_h()">挑戰自我-8</button><br>
+		<a href="https://notfalse.net/17/positional-numeral-systems-conversion">更多資訊有關於進制轉換-1</a><br>
+		<a href="https://www.footmark.info/introduction-to-computer/digital-system-conversion/">更多資訊有關於進制轉換-2</a><br>
+		<button id="target" onclick="correct()"><我已學習完本章></button>
+	</center>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<meta chardet="UTF-8">
+		<type>
+			<link rel="stylesheet" type="text/css" href="style4.css">
+			<link rel="stylesheet" type="text/javascript" href="style3.js">
+			<div class="wrap center"> <!-- Just to center ver and hor -->
+				<div class="wrap-label">
+					<p class="iconicfill-pen-alt2"><i class="fas fa-pencil-alt"></i></p>
+				</div>
+			</div>
+		</type>
+	</head>
+	<script>
+		document.addEventListener('keydown', function(e) {
+		if(e.keyCode == 13){
+			var ele = document.getElementById('name');
+			alert("Hello" + "," + ele.value);
+		  }
+		});
+	</script>
+	<body>
+	<center>
+	<div>
+		<label for="name">Your Name</label>
+		<input type="text" id="name">
+	</div>
+	<center>
+	</body>
+</html>

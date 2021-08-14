@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>程式學習-CPE篇</title>
+		<link rel="stylesheet" type="type/css" href="follow.css">
+	</head>
+	<script>
+			alert("此題不難,務必在為參考情況下,寫出來");
+			function correct(){
+				alert("在本章學習時,\n請勿照抄程式碼.\n務必學習裏頭程式邏輯,而非直接抄襲\n");
+				var g = confirm("Do you want to change next chapter");
+				if(g){
+					window.location.href="uva2.htm";
+				}
+				else{
+					alert("好吧~~");
+				}
+			}
+	</script>
+	<body bgcolor="pink">
+	<center>
+		<p><font size="4">題目敘述如下:<br>
+		<img src="0.png"><br>
+		>>>簡明扼要的來說,就是給定一個字串.如"OOXXOXXOOO",遇到"O",總和+1;遇到"X",不變,則總和多少?</p>
+		<p>題目的輸入與輸出:<br>
+		<img src="1.png"><br>
+		程式編寫觀念:<br>
+		<img src="2_LI.JPG" width="800" height=auto><br></p>
+		<p>原始程式碼<font color=red>(只顯示程式邏輯部分)</font></p>
+		<img src="3.png">
+		<!--<video width=25% height=auto controls>  
+			<source src="./uva1585-1.mp4" type="video/mp4">	
+		</video>
+		<video width=25% height=auto controls>  
+			<source src="./uva1585-2.mp4" type="video/mp4">
+		</video>--><br>
+		本題<font color=red>(建議)</font>可參考網站:<br>
+		<a href="https://knightzone.studio/2015/07/22/2857/uva%EF%BC%9A1585%EF%BC%8Dscore/">參考網站1</a>
+		<a href="https://blog.csdn.net/mobius_strip/article/details/40598897">參考網站2</a><br>
+		<button id="target" onclick="correct()">本章末尾</button>
+	</center>
+	</body>
+</html>

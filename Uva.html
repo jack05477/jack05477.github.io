@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>
+			CPE49題解題過程及教學
+		</title>
+		<meta charset="UTF-8">
+		<type>
+		<div>
+			<link rel="stylesheet" type="text/css" href="style2.css">
+			<div id="stars"></div>
+			<div id="stars2"></div>
+			<div id="stars3"></div>
+		</div>
+		</type>
+	</head>
+	<script type="text/javascript">
+	function fun(){
+		var result = confirm('你確定要前往嗎?')
+		if(result){
+			fun = prompt("請輸入要前往的網頁的主網頁英文名稱");
+			var n = fun[0]
+			if(n >= "A" && n <= "Z")
+				window.location.href = fun + '.html';
+			else{
+				alert("首要字母請大寫");
+				return false;
+			}
+		}
+		else
+			return false;
+	}
+	</script>
+	<body>
+	<div>
+	<table width=100% height=100%>
+		<tr>
+		<td>
+		<center>
+		<font face="times">
+		<span style="font-size:60px;color:green;font-family:century">
+		<a href="String.html" onclick="return fun()" style="text-decoration:none;">字元與字串</a><br>
+		<a href="Math.html" onclick="return fun()" style="text-decoration:none;">數學計算</a></br>
+		<a href="Carry.html" onclick="return fun()" style="text-decoration:none;">進位制轉換</a><br>
+		<a href="Prime.html" onclick="return fun()" style="text-decoration:none;">質數、因數與倍數</a><br>
+		<a href="Coordinate.html" onclick="return fun()" style="text-decoration:none;">幾何與座標</a><br>
+		<a href="Sort.html" onclick="return fun()" style="text-decoration:none;">排序與中位數</a><br>
+		<a href="Simulation.html" onclick="return fun()" style="text-decoration:none;">模擬</a><br>
+		<a href="Others.html" onclick="return fun()" style="text-decoration:none;">Others<a><br>
+		</span>
+		</font>
+		</center>
+		</td>
+		</tr>
+	</table>
+	</div>
+	</body>
+</html>

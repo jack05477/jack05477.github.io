@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<title>
+			Odd sum
+		</title>
+		<meta charset="UTF-8">
+		<type>
+			<link rel="stylesheet" type="text/css" href="style3.css">
+			<div aria-busy="true" aria-label="Loading" role="progressbar" class="container">
+				<div class="swing">
+					<div class="swing-l"></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div class="swing-r"></div>
+				</div>
+				<div class="shadow">
+					<div class="shadow-l"></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div class="shadow-r"></div>
+				</div>
+			</div>
+		</type>
+	</head>
+	<script language="javascript">
+		alert("本單元提供兩種程式碼,分別為C++版本跟Python版本");
+		function Nextpage(){
+			var x = confirm("確定前往下一章");
+			if(x == true)
+				window.open("7.htm");
+			else
+				return false;
+		}
+		function Previouspage(){
+			var x = confirm("確定前往上一章");
+			if(x == true)
+				window.open("5.htm");
+			else
+				return false;
+		}
+	</script>
+	<body>
+	<div>
+	<a href="https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=19&page=show_problem&problem=1724">題目連結</a>
+	<center>
+		<font size="5"><li>題目簡義:</li></font>
+			<p>將數列中,奇數的數字加起來</p>
+		<font size="5"><li>題目測資:</li></font>
+			<p>第一個數字<font color="red">2</font>表示測資數量,<br>
+				第二行的<font color="red">1</font>表示起始數字<br>
+				第三行的<font color="red">5</font>表示結束數字,<br>
+				第四行及第五行同樣表示起始與結束數字</p><br>
+		<font size="5"><li>題目輸出:</li></font>
+			<p>為格式化輸出,格式為 : Case N: ans,
+				其中N表示第幾筆,ans表示奇數和</p>
+		<font size="5"><li>程式邏輯</li></font>
+			<p>很簡單的一題,給一個迴圈,
+				由前往後後數,遇到奇數就加到計數器裡,並輸出</p>
+		<font size="5"><li>程式解說</li></font>
+			<video width="380" height="250" controls>
+			<source src="111.mp4" type="video/mp4">	
+			</video>
+		<font size="5"><li>解題可參考的網站</li></font>
+			<font size="3"><a href="https://knightzone.studio/2012/01/17/1317/uva%EF%BC%9A10783%EF%BC%8Dodd-sum/">參考網站</a></font>
+		<font size="5"><li>程式分享</li></font>
+			<p>透過codepile分享:
+			<a href="https://www.codepile.net/pile/8w8R0zJv">Python</a>
+			<a href=https://www.codepile.net/pile/AvwOBovW">C++</a></p>
+	</center>
+	<button onclick="Nextpage()">切換下一章</button>
+	<button onclick="Previouspage()">切換上一章</button>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+	<head>
+	<meta chardet="UTF-8">
+	<style>
+		input{border:0;
+		background-color:#003C9D;
+		color:#fff;
+		border-radius:10px;
+		cursor:pointer;
+		}
+		input:hover{
+		  color:#003C9D;
+		  background-color:#fff;
+		  border:2px #003C9D solid;
+		}
+	</style>
+	<script>
+		function ans(){
+			alert("You are Right");
+			window.location.href='finish.htm';
+		}
+		function Nans(){
+			alert("You are Wrong");
+			window.location.href='finish.htm';
+		}
+	</script>
+	</head>
+	<body bgcolor="orange">
+	<div>
+	<table width=100% height=100%>
+		<tr>
+		<td>
+		<center>
+		<font size="7"><p>10001</p></font>
+		<input type="button" value="18" name="按鈕名稱" onclick="Nans()" style="width:150px;height:50px;">
+		<input type="button" value="23" name="按鈕名稱" onclick="Nans()" style="width:150px;height:50px;">
+		<input type="button" value="21" name="按鈕名稱" onclick="Nans()" style="width:150px;height:50px;">
+		<input type="button" value="17" name="按鈕名稱" onclick="ans()" style="width:150px;height:50px;">
+		</center>
+		</td>
+		</tr>
+	</table>
+	</div>
+	</body>
+</html>

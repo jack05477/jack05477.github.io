@@ -24,7 +24,8 @@
 			window.location.href='2_2.htm';
 		}
 		var data = window.localStorage.getItem("data");
-		document.getElementById('random').textContent = "data";
+		string s = str(data);
+		document.getElementById('random').textContent = s;
 	</script>
 	</head>
 	<body bgcolor="orange">
@@ -33,7 +34,7 @@
 		<tr>
 		<td>
 		<center>
-		<font size="7"><p id="random">data</p></font>
+		<font size="7"><p id="random">sd</p></font>
 		<input type="button" value="14" name="按鈕名稱" onclick="Nans()" style="width:150px;height:50px;">
 		<input type="button" value="10" name="按鈕名稱" onclick="Nans()" style="width:150px;height:50px;">
 		<input type="button" value="25" name="按鈕名稱" onclick="ans()" style="width:150px;height:50px;">
